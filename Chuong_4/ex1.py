@@ -23,4 +23,16 @@ class NhanVien:
         else:
             self._heSoLuong = he_so_moi
             print(f"Hệ số lương của {self._tenNhanVien} đã được tăng lên: {self._heSoLuong}")
-       
+    
+    @property
+    def tenNhanVien(self):
+        return self._tenNhanVien    
+    @property
+    def luongCoBan(self):
+        return self._luongCoBan
+    @property
+    def heSoLuong(self):
+        return self._heSoLuong
+    @heSoLuong.setter
+    def heSoLuong(self, gia_tri):
+        self._heSoLuong = gia_trị
